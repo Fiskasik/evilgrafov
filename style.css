@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 *,*::after,
 *::before {
   text-decoration: none;
@@ -30,6 +31,8 @@ display: flex;
 }
 
 .section{
+    font-family: 'Pangolin', cursive;
+    text-shadow: 2px 2px red;
     display: flex;
     align-items: center;
     background-color: black;
