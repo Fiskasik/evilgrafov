@@ -1,0 +1,109 @@
+*,*::after,
+*::before {
+  text-decoration: none;
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+.navbar{
+background-color: black;
+font-size: 25px;
+padding: 25px;
+display: flex;
+}
+
+.navbar1{
+    margin-left: auto;
+}
+
+.navbar a{
+    margin-right: 25px;
+    color: #fff;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 200px 50px;
+    animation-name: test2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes test2{
+    25%{background-color: black;}
+    50%{background-image:url(img/graves.png);}
+    75%{background-color: black;}
+    100%{background-color: black;}
+}
+
+.section h1{
+    font-size: 55px;
+    color: #fff;
+    animation-name: test;
+    border-bottom: 2px solid #260707;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes test{
+    25%{border-bottom: 2px solid #260707;}
+    50%{border-bottom: 2px solid red;}
+    100%{border-bottom: 2px solid #260707;}
+}
+  
+  footer {
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 30px;
+    font-size: 35px;
+    color: #ffe7;
+}
+
+.first, .second{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    border: 2px solid #fff;
+    animation-name: test3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    width: 100%;
+}
+@keyframes test3{
+    25%{border: 2px solid #fff;}
+    50%{border: 2px solid black;}
+    75%{border: 2px solid red}
+    100%{border: 2px solid #fff;}
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+      font-size: 26px;
+      padding: 15px;
+    }
+    .section {
+        flex-direction: column;
+        padding: 100px 15px;
+      }
+    .second{
+        margin-top: 50px;
+    }
+    }
